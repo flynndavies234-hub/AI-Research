@@ -1,18 +1,12 @@
 # AI Research
 
-Windows desktop research and investing workspace.
+Desktop research, school tutor, portfolio and planning workspace.
 
-## Update channel
-This repository is the public update source for installed AI Research builds.
+## V2.2.1
+- Collapsible left sidebar
+- School Tutor & Research workspace
+- Explain & Solve, Research Assignment, Check My Work and Practice modes
+- OpenAI API configuration in Settings
+- GitHub Releases auto-update channel
 
-Current installed line: **2.2.x**
-
-Future Windows releases should publish:
-- `latest.yml`
-- `AI-Research-Setup-<version>.exe`
-- `AI-Research-Setup-<version>.exe.blockmap`
-
-The desktop app can then detect newer versions and offer to download/install them.
-
-## Safety
-The app is a research/planning tool. It does not place trades or connect to a brokerage account by default.
+The application does not place trades. The user remains in control of investment decisions.
