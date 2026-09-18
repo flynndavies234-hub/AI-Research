@@ -50,3 +50,5 @@ jobs:
             dist/latest.yml
             dist/*.exe
             dist/*.blockmap
+
+# Release trigger: V2.2.2 updater test
