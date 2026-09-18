@@ -1,17 +1,5 @@
-# Releasing an update
+# Releasing AI Research
 
-1. Increase the version in `package.json`, for example from `2.2.0` to `2.2.1`.
-2. Commit the updated source.
-3. Create and push a tag matching the version:
-   ```
-   git tag v2.2.1
-   git push origin v2.2.1
-   ```
-4. GitHub Actions builds the Windows installer and publishes the release assets.
-5. Installed AI Research clients can check the GitHub releases feed and download the newer version.
+V2.2.1 uses GitHub Releases as its update provider.
 
-## Important
-The application must use the GitHub update provider for:
-`flynndavies234-hub/AI-Research`
-
-Do not delete old releases until a newer release has been verified.
+For future versions, bump package.json, commit, then push a v-prefixed tag. GitHub Actions builds the NSIS installer and publishes latest.yml, the installer, and blockmap. Installed V2.2.1+ clients can detect those releases.
