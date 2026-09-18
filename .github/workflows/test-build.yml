@@ -14,6 +14,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Syntax check main process
+        run: node --check main.js
+      - name: Syntax check preload
+        run: node --check preload.js
+      - name: Extract and syntax check renderer
+        shell: pwsh
+        run: |
+          $html = Get-Content index.html -Raw
+          $m = [regex]::Match($html, '(?s)<script>(.*?)</script>')
+          if (-not $m.Success) { throw 'Renderer script not found' }
+          Set-Content renderer-check.js $m.Groups[1].Value
+          node --check renderer-check.js
       - name: Install dependencies
         run: npm install
       - name: Build Windows test installer
