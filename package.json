@@ -1,6 +1,6 @@
 {
   "name": "ai-research",
-  "version": "2.2.2",
+  "version": "2.5.0",
   "description": "AI Research desktop workspace",
   "main": "main.js",
   "scripts": {
